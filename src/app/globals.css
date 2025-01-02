@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+
+@layer base {
+  :root {
+    --primary: --color-gray-600;
+    --primary-foreground: --color-gray-600;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --background: 100% 0 106.37;
+    --foreground: 240 10% 3.9%;
+    --border: 240 5.9% 90%;
+    --border-foreground: 240 3.8% 46.1%;
+    --ring: 240 10% 3.9%;
+    --destructive: 0 84.2% 60.2%;
+  }
+  .dark {
+    --primary: --color-gray-600;
+    --primary-foreground: --color-gray-100;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --border-foreground: 240 5% 64.9%;
+    --ring: 240 4.9% 83.9%;
+    --destructive: 0 62.8% 30.6%;
+  }
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-border-foreground: hsl(var(--border-foreground));
+  --color-ring: hsl(var(--ring));
+  --colro-destructive: hsl(var(--destructive));
+}
